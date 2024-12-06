@@ -45,7 +45,7 @@ def part2(input):
     for update in updates.split("\n")[:-1]:
         update = update.split(",")
         if not isCorrectUpdateOrder(update, graph):
-            corrected_update = sorted(update, key=cmp_to_key(lambda item1, item2: graph.compare(item2, item1)))
+            corrected_update = sorted(update, key=cmp_to_key(graph.compare))
             sum += int(corrected_update[len(corrected_update)//2])
 
     return sum
