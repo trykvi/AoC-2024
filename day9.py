@@ -8,16 +8,6 @@ def unrollFile(file):
 
     return unrolled_file
 
-def unrollFile2d(file):
-    unrolled_file = []
-    for i in range(len(file)):
-        if i % 2 == 0:
-            unrolled_file.append([str(i//2)]*int(file[i]))
-        else:
-            unrolled_file.append(['.']*int(file[i]))
-
-    return unrolled_file
-
 def calc_checksum(file):
     result = 0
     for i in range(len(file)):
