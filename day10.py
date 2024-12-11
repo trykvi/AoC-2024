@@ -63,7 +63,7 @@ def part2(input):
     total_score = 0
     for trailhead in trailheads:
         #print(trailhead)
-        total_score += count_trails_starting_from(trailhead, map)
+        total_score += count_trails_starting_from(trailhead, map)      
 
     return total_score
 
