@@ -101,7 +101,7 @@ def part2(input):
     sorted_results = sorted(results, key=lambda tup: tup[0])
 
     for result in sorted_results[:50]:
-        result[1].save(f"./images/{result[0]}a{result[2]}.png")
+        result[1].save(f"./images/{result[0]}_{result[2]}.png")
     
 
 
