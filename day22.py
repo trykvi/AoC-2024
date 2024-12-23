@@ -18,7 +18,7 @@ def part1(input):
     result = 0
 
     for secret_num in secret_nums:
-        for i in range(2000):
+        for _ in range(2000):
             secret_num = calc_next_num(secret_num)
 
         #print(secret_num)

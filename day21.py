@@ -246,6 +246,8 @@ def part2(input):
                 #best_path = final_code_length
         
         #print(best_path)
+
+        print(code, min_length)
         
         result += get_numeric_part(code) * min_length
         #print(min_length)
